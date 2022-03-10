@@ -1,0 +1,32 @@
+.nav{
+background-color: #1a73e8;
+flex-wrap: wrap;
+
+}
+.title{
+    color: white;
+font-size: 2rem;
+}
+.enlacesnav{
+    display: flex;
+    justify-content: space-evenly;    
+    padding: 5px;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+.enlace{
+    padding: 5px;
+    margin-right: 5px;
+    margin: 10px;
+}
+.styles.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+  }

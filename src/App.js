@@ -1,26 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
-import { Button } from 'react-bootstrap';
+import styles from "./App.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from './componentes/nav';
+import Slider from './componentes/carousel';
+import Navmenu from './componentes/navmenu';
+import PrimarySearchAppBar from './componentes/navmenu';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button>HOLA</Button>
+    <div className={styles.body}>
+      <header >
+     <Nav/>
       </header>
+      <section>       
+         <Slider/>
+</section>
+<div>
+<Navmenu/>
+</div>
     </div>
   );
 }
