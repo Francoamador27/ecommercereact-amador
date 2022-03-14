@@ -9,7 +9,7 @@ function Slider() {
   return (
       <section>
           
-<Carousel>
+<Carousel className={styles.slider}>
   <Carousel.Item>
     <img
       className="d-block w-100"

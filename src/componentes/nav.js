@@ -1,28 +1,23 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar, Container} from 'react-bootstrap';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import styles from "./nav.module.css";
-
-function Nav() {
+import logo from "../logo/1.png";
+import CustomizedMenus from "./perfil"
+function Navbar() {
   return (
-    <section className={styles.nav}>
-    <Navbar   >
-  <Container >
-    <Navbar.Brand href="#home"><h1 className={styles.title} >Smarts Tienda Tecno</h1></Navbar.Brand>
-    <Navbar.Toggle />
-    <Navbar.Collapse className="justify-content-end">
-        <div className={styles.enlacesnav}>
-           <div className={styles.enlace}>
-           <a href=''>Perfil</a>
-           </div>
-              <div className={styles.enlace} >
-              <a href=''>Home</a>
-             </div>
-        </div>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
-</section>
+  <nav>
+<div className={styles.contenedor}>
+    <div className={styles.logo}>
+    <img className={styles.imglogo}
+      src={logo}
+/>
+  </div>
+  <div  className={styles.enlacess}> 
+    <a className={styles.enlacesnav} href="">Mi cuenta</a>
+    <a className={styles.enlacesnav} href=""><ShoppingCartIcon/></a>
+  </div>
+  </div>
+  </nav>
   );
 }
 
-export default Nav;
+export default Navbar;

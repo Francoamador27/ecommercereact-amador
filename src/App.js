@@ -5,19 +5,21 @@ import Nav from './componentes/nav';
 import Slider from './componentes/carousel';
 import Navmenu from './componentes/navmenu';
 import PrimarySearchAppBar from './componentes/navmenu';
+import Navbar from './componentes/nav';
 
 
 function App() {
   return (
     <div className={styles.body}>
       <header >
-     <Nav/>
+     <Navbar/>
       </header>
-      <section>       
+        <section>       
          <Slider/>
 </section>
 <div>
 <Navmenu/>
+
 </div>
     </div>
   );
