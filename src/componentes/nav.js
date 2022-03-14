@@ -12,6 +12,7 @@ function Navbar() {
 />
   </div>
   <div  className={styles.enlacess}> 
+  <input type="search" placeholder='¿Que estas buscando?' className={styles.search}></input>
     <a className={styles.enlacesnav} href="">Mi cuenta</a>
     <a className={styles.enlacesnav} href=""><ShoppingCartIcon/></a>
   </div>
