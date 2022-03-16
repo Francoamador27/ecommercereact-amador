@@ -6,6 +6,8 @@ import Slider from './componentes/carousel';
 import Navmenu from './componentes/navmenu';
 import PrimarySearchAppBar from './componentes/navmenu';
 import Navbar from './componentes/nav';
+import CardsMui from './componentes/CardsMui';
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
 <Navmenu/>
 
 </div>
+<CardsMui/>
+<ItemListContainer/>
     </div>
   );
 }
