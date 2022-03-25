@@ -6,7 +6,8 @@ import './Cards.css';
 
 function Cards({titulo, descripcion, price, imagen,stock}) {
   const onAdd = (count) => {
-    alert(`Agregaste ${count} productos`);
+    const total = count * price;
+    alert(`Agregaste el producto ${titulo} cantidad ${count}  Total a abonar: $${total}`);
   };
   return (
     
