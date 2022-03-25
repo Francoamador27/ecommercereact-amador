@@ -21,12 +21,12 @@ function ItemListContainer() {
     }]
 const [products, setProducts] = useState([])
 
-const getProductos= ()  => { 
- return new Promise ((resolve, reject) =>{
+const getProductos= ()  =>  new Promise ((resolve, reject) =>{
 
-return resolve(mockProductos)
-} )
-}
+return setTimeout ( () => { 
+  resolve(mockProductos);
+},3000 );
+});
 
 
 useEffect( () =>{
@@ -44,8 +44,14 @@ useEffect( () =>{
   return (
     <Grid container spacing={2}>
         <Grid item xs={12} md={12} sm={12} spacing={3} lg={12}>
-       {console.log('productos: ', products )}
+{products.map( (product) => {
+  return(
+    <div>
+<p>Nombre : {product.title} </p>
 
+    </div>
+  ) 
+} )}
         </Grid>
         </Grid>
     
