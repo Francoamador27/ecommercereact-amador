@@ -7,6 +7,7 @@ import CardsMui from './componentes/CardsMui';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import Count from "./componentes/Count/Count";
 import Productos from "./componentes/Grid/Grid";
+import Item from "./componentes/item";
 
 
 function App() {
@@ -22,9 +23,8 @@ function App() {
 <Navmenu/>
 
 </div>
-<CardsMui/>
 <ItemListContainer/>
-<Productos/>
+<Item/>
     </div>
   );
 }

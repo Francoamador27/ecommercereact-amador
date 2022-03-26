@@ -8,21 +8,34 @@ function ItemListContainer() {
     
       id: 1,
       title: 'Remera',
+      descripcion: 'Dsfesadsas',
       talle: 'XL',
       price: 3500,
+      image: 'bici.jpg',
+      stock: 3
+    },
+    {
+    
+      id: 1,
+      title: 'Remera',
+      descripcion: 'Dsfesadsas',
+      talle: 'XL',
+      price: 3500,
+      image: 'bici.jpg',
       stock: 3
     },
     {
       id: 2,
       title: 'Pantalon',
+      descripcion: 'Dsfesadsas',
       talle: 'M',
       price: 5500,
+      image: 'bici.jpg',
       stock: 5
     }]
 const [products, setProducts] = useState([])
 
 const getProductos= ()  =>  new Promise ((resolve, reject) =>{
-
 return setTimeout ( () => { 
   resolve(mockProductos);
 },3000 );
@@ -42,18 +55,17 @@ useEffect( () =>{
 
 
   return (
-    <Grid container spacing={2}>
-        <Grid item xs={12} md={12} sm={12} spacing={3} lg={12}>
+    
+        <div className="list">
 {products.map( (product) => {
-  return(
-    <div>
-<p>Nombre : {product.title} </p>
+const{id, title, descripcion, talle, price, stock} = product
 
-    </div>
+  return(
+  
+<Cards data={product} key={id} />
   ) 
 } )}
-        </Grid>
-        </Grid>
+     </div>
     
   );
 }

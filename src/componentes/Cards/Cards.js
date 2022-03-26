@@ -4,17 +4,21 @@ import './Cards.css';
 
 
 
-function Cards({titulo, descripcion, price, imagen,stock}) {
+function Cards({data}) {
+  const{id, title, descripcion, talle, price, stock, image} = data
+
   const onAdd = (count) => {
     const total = count * price;
-    alert(`Agregaste el producto ${titulo} cantidad ${count}  Total a abonar: $${total}`);
+    alert(`Agregaste el producto ${title} cantidad ${count}  Total a abonar: $${total}`);
   };
+
   return (
-    
+
     <div className='cards' >
-        <img src={imagen} />
-  <h3>{titulo} </h3>
+      <img src={`./${image} ` } />
+  <h3>{title} </h3>
   <p>stock: {stock}</p>
+  <p>talle: {talle} </p>
   <p>{descripcion} </p> 
   <p>{price} </p>
   <ItemCount stock={stock} initial={1} onAdd={onAdd} />
