@@ -1,24 +1,19 @@
 import { useState, useEffect } from "react";
 import Cards from "../Cards/Cards";
-import './ItemListContainer.css';
 import { mockProductos } from "../mockProductos";
-
-function ItemListContainer() {
+function Item() {
  
 const [products, setProducts] = useState([])
 
 const getProductos= ()  =>  new Promise ((resolve, reject) =>{
 return setTimeout ( () => { 
   resolve(mockProductos);
-},3000 );
+}, );
 });
-
-
-useEffect( () =>{
-  getProductos().then( (data) => {
+getProductos().then( (data) => {
     setProducts(data)
   } )
-}, [] )
+
 
 
 
@@ -28,18 +23,11 @@ useEffect( () =>{
 
   return (
     
-        <div className="list">
-{products.map( (product) => {
-const{id, title, descripcion, talle, price, stock,} = product
-
-  return(
+    <div>
   
-<Cards data={product} key={id} />
-  ) 
-} )}
-     </div>
+    </div>
     
   );
 }
 
-export default ItemListContainer;
+export default Item;

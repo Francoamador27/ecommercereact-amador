@@ -15,7 +15,6 @@ function Cards({data}) {
   return (
 
     <div className='cards' >
-      <img src={`./${image} ` } />
   <h3>{title} </h3>
   <p>stock: {stock}</p>
   <p>talle: {talle} </p>

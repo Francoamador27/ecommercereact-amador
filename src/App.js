@@ -7,7 +7,7 @@ import CardsMui from './componentes/CardsMui';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import Count from "./componentes/Count/Count";
 import Productos from "./componentes/Grid/Grid";
-import Item from "./componentes/item";
+import Item from "./componentes/Item/Item";
 
 
 function App() {
