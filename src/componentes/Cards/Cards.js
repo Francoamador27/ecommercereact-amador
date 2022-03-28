@@ -18,7 +18,6 @@ function Cards({data}) {
   <h3>{title} </h3>
   <p>stock: {stock}</p>
   <p>talle: {talle} </p>
-  <p>{descripcion} </p> 
   <p>{price} </p>
   <ItemCount stock={stock} initial={1} onAdd={onAdd} />
 

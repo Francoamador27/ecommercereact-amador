@@ -3,7 +3,7 @@ export const mockProductos = [ {
     
     id: 1,
     title: 'Remera',
-    descripcion: 'Dsfesadsas',
+    descripcion: 'Dasdfkdaslñkfñladskjfklñadmsfdsakladsjfkljeijaiosur9wquoiuqwioeuqwojeklaselk',
     talle: 'XL',
     price: 3500,
     image: 'bici.jpg',
