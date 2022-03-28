@@ -1,9 +1,13 @@
-
-
+import { mockProductos } from "./mockProductos";
 function Item() {
+  console.log('itemjs',mockProductos)
 
     return (
-      <p>Producto</p>
+        <div>
+      <p>Titulo{mockProductos.title} </p>
+      <p> Descripcion</p>
+      <p>Precios</p>
+      </div>
     )
   }
   
