@@ -1,20 +1,18 @@
 import { useState, useEffect } from "react";
 import Cards from "../Cards/Cards";
 import { mockProductos } from "../mockProductos";
-function Item() {
+function ItemDetail({item} ) {
  
-const [products, setProducts] = useState([])
-
-
-console.log(mockProductos)
+const{title,price,descripcion,talle} = item;
 
 
 
-
+console.log('console desde ItemDetail',item)
+console.log()
   return (
     
     <div>
-   <h1>{mockProductos[0].title}</h1>
+   <h1>{title}</h1>
     <div className="d-flex" >
         <div>IMAGEN</div>
    <div> 
@@ -31,4 +29,4 @@ console.log(mockProductos)
   );
 }
 
-export default Item;
+export default ItemDetail;

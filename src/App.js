@@ -7,7 +7,7 @@ import CardsMui from './componentes/CardsMui';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import Count from "./componentes/Count/Count";
 import Productos from "./componentes/Grid/Grid";
-import Item from "./componentes/Item/Item";
+import ItemDetailsContainer from "./componentes/ItemDetailsContainer";
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
 
 </div>
 <ItemListContainer/>
-<Item/>
+<ItemDetailsContainer/>
     </div>
   );
 }
