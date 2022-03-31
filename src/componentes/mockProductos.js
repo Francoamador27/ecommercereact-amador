@@ -11,7 +11,7 @@ export const mockProductos = [ {
   },
   {
   
-    id: 1,
+    id: 2,
     title: 'Remera',
     descripcion: 'probando',
     talle: 'XL',
@@ -20,7 +20,7 @@ export const mockProductos = [ {
     stock: 3
   },
   {
-    id: 2,
+    id: 3,
     title: 'Pantalon',
     descripcion: 'Dsfesadsas',
     talle: 'M',

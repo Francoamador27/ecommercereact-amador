@@ -14,15 +14,15 @@ console.log()
     <div>
    <h1>{title}</h1>
     <div className="d-flex" >
-        <div>IMAGEN</div>
+        <img src={''} />
    <div> 
     <h2> Descripcion  </h2>
-    <p>{mockProductos[0].descripcion}</p>
+    <p></p>
     </div>
     </div>
     <div className="d-flex justify-content-evenly">
-<p>Precios {mockProductos[0].price} </p>
-    <p>Talle: {mockProductos[0].talle}</p>
+<p>Precios {price} </p>
+    <p>Talle: {talle} </p>
     </div>
     </div>
     

@@ -17,12 +17,12 @@ async function getItem(){
 
 
 useEffect( () =>{
-  getItem().then( (dataitem) => {
-    setItem(dataitem)
-  } ).finally(() => {
-      console.log("Final de la llamada")
-  })
-}, [] )
+  getItem()
+  .then( resp => resp.find(el => el.id ===2))
+  .then( data => setItem(data));
+},[])
+
+  
 
 
 
