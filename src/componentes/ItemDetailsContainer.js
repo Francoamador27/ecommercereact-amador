@@ -2,9 +2,13 @@ import { useState, useEffect } from "react";
 import ItemDetail from "./Item/ItemDetail";
 import { mockProductos } from "./mockProductos";
 import './itemdetails.css';
+import {useParams} from 'react-router-dom'
+
 
 function ItemDetailsContainer() {
- 
+  const{id} = useParams()
+ console.log('parametro',id)
+
 const [item, setItem] = useState([])
 
 async function getItem(){
