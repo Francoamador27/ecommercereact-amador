@@ -1,0 +1,27 @@
+.itemdetail{
+    border: 10px;
+}
+.imagendetail{
+    width: 300px;
+    height: auto;
+}
+.titleitemdetail{
+    text-align: center;
+}
+.contentitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.precioitem{
+    font-size: 2rem;
+}
+.price{
+    color: red;
+}
+.hdescripcion{
+    text-align: center;
+}
+.descripcion{
+    text-align: center;
+}

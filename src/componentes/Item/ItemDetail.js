@@ -1,9 +1,13 @@
+import { Description } from "@mui/icons-material";
 import { useState, useEffect } from "react";
+import { Button } from "react-bootstrap";
 import Cards from "../Cards/Cards";
 import { mockProductos } from "../mockProductos";
+import './Itema.css';
+
 function ItemDetail({item} ) {
  
-const{title,price,descripcion,talle} = item;
+const{title,price,descripcion,talle, image, stock} = item;
 
 
 
@@ -11,19 +15,24 @@ console.log('console desde ItemDetail',item)
 console.log()
   return (
     
-    <div>
-   <h1>{title}</h1>
-    <div className="d-flex" >
-        <img src={''} />
+    <div className="itemdetail">
+   <h1 className="titleitemdetail">{title}</h1>
+    <div className="contentitem" >
+        <img className="imagendetail" src={`./${image}`} />
    <div> 
-    <h2> Descripcion  </h2>
-    <p></p>
+    <p>Talle: {talle} </p>
+    <p>Stock: {stock} </p>
+    <Button>Añadir al Carrito</Button>
+
+
     </div>
     </div>
     <div className="d-flex justify-content-evenly">
-<p>Precios {price} </p>
-    <p>Talle: {talle} </p>
+<p className="precioitem">Precio <span className="price"> ${price} </span></p>
     </div>
+    <h2 className="hdescripcion"> Descripcion  </h2>
+    <p className="descripcion"> {descripcion}</p>
+
     </div>
     
   );
