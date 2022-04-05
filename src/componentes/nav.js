@@ -9,9 +9,10 @@ function Navbar() {
   <nav>
 <div className={styles.contenedor}>
     <div className={styles.logo}>
+    <Link to={'/'}>
     <img className={styles.imglogo}
       src={logo}
-/>
+/></Link>
   </div>
   <div  className={styles.enlacess}> 
   <input type="search" placeholder='¿Que estas buscando?' className={styles.search}></input>

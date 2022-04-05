@@ -31,8 +31,9 @@ console.log(product)
     <div className="itemdetail">
    <h1 className="titleitemdetail">{product.title} </h1>
     <div className="contentitem" >
-        <img className="imagendetail" src={`../${product.title} `}  />
+        <img className="imagendetail" src={`../${product.image} `}  />
    <div> 
+     
     <p>Talle: {product.talle} </p>
     <p>Stock:  {product.stock} </p>
     <Button>Añadir al Carrito</Button>

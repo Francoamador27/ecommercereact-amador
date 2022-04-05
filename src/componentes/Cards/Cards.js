@@ -22,6 +22,7 @@ const addToCart = (e) => {
 }
   return (
     <div className='cards' onClick={changePage} >
+  <img className='imgcard' src={`./${image}`} alt={image} />
   <h3>{title} </h3>
   <p>stock: {stock}</p>
   <p>talle: {talle} </p>

@@ -15,3 +15,6 @@ button.cart {
     border: none;
     background-color: white;
 }
+img.imgcard {
+    width: 100%;
+}
