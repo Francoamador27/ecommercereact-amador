@@ -10,3 +10,8 @@ border-radius: 5px;
 padding: 10px;
 text-align: center;
 }
+
+button.cart {
+    border: none;
+    background-color: white;
+}
