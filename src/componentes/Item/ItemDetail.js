@@ -36,16 +36,17 @@ console.log(product)
      
     <p>Talle: {product.talle} </p>
     <p>Stock:  {product.stock} </p>
+    <p className="precioitem">${product.price} <span className="price">  </span></p>
     <Button>Añadir al Carrito</Button>
 
 
     </div>
     </div>
     <div className="d-flex justify-content-evenly">
-<p className="precioitem">Precio {product.price} <span className="price"> $ </span></p>
+
     </div>
-    <h2 className="hdescripcion"> Descripcion  {product.descripcion} </h2>
-    <p className="descripcion"> </p>
+    <h2 className="hdescripcion container"> Descripcion   </h2>
+    <p className="descripcion">{product.descripcion} </p>
 
     </div>
     
