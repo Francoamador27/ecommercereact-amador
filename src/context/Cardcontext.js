@@ -1,27 +1,25 @@
 import { createContext, useState } from "react";
 
-const cartContext = createContext();
+const CartContext = createContext();
 
 const CartProvider = ({children}) => {
+const [cartProducts, setCartProducts] = useState([])
 
-
-const [stado1, setStado1] = useState(true)
-
-const handleClick = () => {
-    console.log('funcion desde contexto')
+const addProductTocart = (product) =>{
+console.log('agregar producto', product)
 }
 
 const data = {
-    stado1,
-    handleClick
+    setCartProducts,
+    addProductTocart
 }
 
 return (
-<cartContext.Provider value={data}>
+<CartContext.Provider value={data}>
     {children}
-</cartContext.Provider>
+</CartContext.Provider>
 
 )
 }
 export {CartProvider}
-export default cartContext
+export default CartContext
