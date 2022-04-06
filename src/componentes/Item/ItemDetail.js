@@ -48,9 +48,10 @@ const onAdd = (count) => {
     <div className="contentitem" >
         <img className="imagendetail" src={`../${product.image} `}  />
    <div> 
-     
+     <div className="tallestock">
     <p>Tamaño de pantalla: {product.talle} </p>
     <p>Stock disponible:  {product.stock} </p>
+    </div>
     <div className="">
     <p className="precioitem">${product.price} <span className="price">  </span></p>
 

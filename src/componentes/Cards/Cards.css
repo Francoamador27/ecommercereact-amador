@@ -21,3 +21,11 @@ img.imgcard {
 .pricecard{
     font-size: 1.5rem;
 }
+.cards:hover{
+    float: right;
+
+    cursor: pointer;
+    width: 250px;
+    box-shadow: 1px 3px 20px #c509099f;
+
+}
