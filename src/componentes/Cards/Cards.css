@@ -18,3 +18,6 @@ button.cart {
 img.imgcard {
     width: 100%;
 }
+.pricecard{
+    font-size: 1.5rem;
+}

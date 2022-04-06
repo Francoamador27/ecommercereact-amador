@@ -15,7 +15,7 @@ export const mockProductos = [ {
     title: 'Aero Ryzen5 ',
     descripcion: 'Modelo: 5205U Intel: Celeron Núcleos: 2 Frecuencia Basica: 1,9 GHz Caché: 2Mb',
     talle: '15"',
-    price: 3500,
+    price: 15000,
     image: 'aero.jpg',
     stock: 3
   },

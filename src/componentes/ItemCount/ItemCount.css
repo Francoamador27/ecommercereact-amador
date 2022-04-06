@@ -8,7 +8,7 @@
 .stock p{
     margin-top: 0;
     margin-bottom: 0;
-    color: #26991c;
+    color: #204ea5;
 }
 
 .stock button {
@@ -28,7 +28,7 @@ button.addcart {
 
 button.addcart:hover {
     color: white;
-    background-color: #26991c;
+    background-color: #1c3d99;
     border-radius: 5px;
 }
 
@@ -39,4 +39,7 @@ button.addcart:hover {
     background-color: white;
     border: none;
     color: blue;
+}
+.addcart{
+    margin-left: 8px;
 }

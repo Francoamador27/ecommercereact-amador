@@ -5,10 +5,13 @@ import Cards from "../Cards/Cards";
 import { mockProductos } from "../mockProductos";
 import './Itema.css';
 import {useParams} from 'react-router-dom'
+import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
 
 const ItemDetail = () => {
  const {id, category} = useParams()
  const [product, setProduct] = useState({})
+ const [click, setClick] = useState(true);
 
 useEffect( () => {
   filterProductById(mockProductos, id )
@@ -16,6 +19,7 @@ useEffect( () => {
 },[])
 
 const filterProductById = (array, id) => {
+
   return array.map( (product)=> {
 if(product.id == id){
   return setProduct(product) 
@@ -24,6 +28,17 @@ if(product.id == id){
 }
 console.log(product)
 
+const onAdd = (count) => {
+  const total = count * product.price;
+  if (count > 0 ){
+    setClick(!click)
+    alert(`Agregaste el producto ${product.title} cantidad ${count}  Total a abonar: $${total}`);
+
+  }
+  
+  console.log('click esta',click)
+  
+};
 
 
   return (
@@ -34,12 +49,20 @@ console.log(product)
         <img className="imagendetail" src={`../${product.image} `}  />
    <div> 
      
-    <p>Talle: {product.talle} </p>
-    <p>Stock:  {product.stock} </p>
+    <p>Tamaño de pantalla: {product.talle} </p>
+    <p>Stock disponible:  {product.stock} </p>
+    <div className="">
     <p className="precioitem">${product.price} <span className="price">  </span></p>
-    <Button>Añadir al Carrito</Button>
 
+   { click ? (
+ <div className="itemcount">    <ItemCount   stock={product.stock} initial={1} onAdd={onAdd} /> </div>  
+   ): (
+     <div className="checkout">
+       <p className="pcheck"> Ir al Check Out </p>
+    <Link to={'/Checkout'}> <Button>CkeckOut</Button></Link></div>
+   )}
 
+</div>
     </div>
     </div>
     <div className="d-flex justify-content-evenly">
